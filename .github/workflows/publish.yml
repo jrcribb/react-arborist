@@ -16,4 +16,5 @@ jobs:
       - run: yarn
       - run: sh bin/publish --tag latest
         env:
+          YARN_NPM_REGISTRY_SERVER: "https://registry.npmjs.org"
           YARN_NPM_AUTH_TOKEN: ${{ secrets.NPM_ACCESS_TOKEN }}
